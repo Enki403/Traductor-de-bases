@@ -97,7 +97,7 @@ class Logic(object):
         """
             Carga la tabla de tokens del analizador léxico
         """
-        self.ui.lexTable.setModel(TableModel(data, ["Línea", "Tipo", "Valor", "Descripción"]))
+        self.ui.lexTable.setModel(TableModel(data, ["Línea", "Token", "Lexema", "Descripción"]))
         self.ui.lexTable.resizeColumnsToContents()
         self.ui.lexTable.setColumnWidth(3,365)
     
