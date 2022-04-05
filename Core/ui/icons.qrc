@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>../../README.MD</file>
+    <file>icons/logo.png</file>
+    <file>icons/favicon.ico</file>
+  </qresource>
+</RCC>
