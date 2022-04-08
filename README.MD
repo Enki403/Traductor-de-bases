@@ -109,7 +109,7 @@ Para instalar las dependencias se puede utilizar `pip install -r requirements.tx
 
 * **PyQt5==5.15.6** para el desarrollo del GUI
 
-## Usage
+## Uso
 
 Se provee el script [main.py](main.py), el cual implementa la interfaz gráfica.
 
