@@ -1,6 +1,12 @@
 # Proyecto de Diseño de Compiladores
 
 ## Integrantes: 
+- Alexis Ochoa
+- Hector Vasquez
+- Jose Barrientos
+- Josue Caballero
+- Melissa Diaz
+- Nora Rodriguez
 
 ## Descripción
 El objetivo de este programa es implementar un analizador léxico y uno sintáctico, de modo que a partir de una entrada de números (base 10) pueda obtenerse una salida convirtiendo a distintas bases y a su vez mostrarse los tokens, el resultado y el árbol.
