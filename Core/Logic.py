@@ -16,6 +16,13 @@ class Logic(object):
         self.Conversor = QtWidgets.QMainWindow()
         self.ui = Ui_Conversor()
         self.ui.setupUi(self.Conversor)
+        self.ui.lexTable.resizeColumnsToContents()
+        self.ui.lexTable.setColumnWidth(3,225)
+        self.ui.lexTable.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.ui.sinTable.resizeColumnsToContents()
+        self.ui.sinTable.setColumnWidth(0,100)
+        self.ui.sinTable.setColumnWidth(1,165)
+        self.ui.sinTable.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
 
         self.grammar = QtWidgets.QWidget()
         self.grammar_ui = Ui_grammar()
@@ -67,6 +74,11 @@ class Logic(object):
         self.ui.inputBox.clear()     
         self.load_lex_table([["","","",""]])
         self.load_sin_table([["",""]])
+        self.ui.lexTable.resizeColumnsToContents()
+        self.ui.lexTable.setColumnWidth(3,225)
+        self.ui.sinTable.resizeColumnsToContents()
+        self.ui.sinTable.setColumnWidth(0,100)
+        self.ui.sinTable.setColumnWidth(1,165)
 
     def import_file(self):
         """
@@ -99,13 +111,16 @@ class Logic(object):
         """
         self.ui.lexTable.setModel(TableModel(data, ["Línea", "Token", "Lexema", "Descripción"]))
         self.ui.lexTable.resizeColumnsToContents()
-        self.ui.lexTable.setColumnWidth(3,365)
+        self.ui.lexTable.setColumnWidth(3,225)
+        
     
     def load_sin_table(self, data):
         """
             Carga la tabla de tokens del analizador sintáctico
         """
         self.ui.sinTable.setModel(TableModel(data, ["Operacion", "Resultado"]))
+        self.ui.sinTable.setColumnWidth(0,100)
+        self.ui.sinTable.setColumnWidth(1,165)
         self.ui.sinTable.resizeColumnsToContents()
 
 

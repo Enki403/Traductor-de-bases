@@ -98,7 +98,7 @@ p, li { white-space: pre-wrap; }
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;403hex&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;hex_193&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;193 (hex)&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a hexadecimal&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
@@ -107,7 +107,7 @@ p, li { white-space: pre-wrap; }
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;403oct&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;oct_623&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;623 (hex)&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a octal&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
@@ -116,7 +116,7 @@ p, li { white-space: pre-wrap; }
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;403rom&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;rom_CDIII&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;CDIII&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a números romanos&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
@@ -125,16 +125,16 @@ p, li { white-space: pre-wrap; }
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;403alt&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;alt_&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;cuatrocientos tres&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a una base &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt; color:#3f3f3f;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt; color:#000000;&quot;&gt;lternativa&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt; font-style:italic; color:#3f3f3f;&quot;&gt; (Ver documentación)&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a números verbales&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;ran&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;403ran&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;hex_193&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; &lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;CDIII&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
 &lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif,serif'; font-size:10pt;&quot;&gt;Convierte a cualquiera de las anteriores de manera aleatoria&lt;/span&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

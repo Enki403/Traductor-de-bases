@@ -17,9 +17,6 @@ class Ui_grammar(object):
         grammar.resize(594, 447)
         grammar.setMinimumSize(QtCore.QSize(594, 447))
         grammar.setMaximumSize(QtCore.QSize(594, 447))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icon/icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        grammar.setWindowIcon(icon)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(grammar)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 571, 421))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
@@ -82,7 +79,7 @@ class Ui_grammar(object):
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">403hex</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">hex_193</span> </p></td>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">193 (hex)</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a hexadecimal</span> </p></td></tr>\n"
 "<tr>\n"
@@ -91,7 +88,7 @@ class Ui_grammar(object):
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">403oct</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">oct_623</span> </p></td>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">623 (hex)</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a octal</span> </p></td></tr>\n"
 "<tr>\n"
@@ -100,7 +97,7 @@ class Ui_grammar(object):
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">403rom</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">rom_CDIII</span> </p></td>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">CDIII</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a números romanos</span> </p></td></tr>\n"
 "<tr>\n"
@@ -109,20 +106,21 @@ class Ui_grammar(object):
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">403alt</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">alt_</span> </p></td>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">cuatrocientos tres</span></p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a una base </span><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt; color:#3f3f3f;\">a</span><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt; color:#000000;\">lternativa</span><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt; font-style:italic; color:#3f3f3f;\"> (Ver documentación)</span> </p></td></tr>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a números verbales</span></p></td></tr>\n"
 "<tr>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">ran</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">403ran</span> </p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">hex_193</span> </p></td>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> <span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">CDIII</span></p></td>\n"
 "<td style=\" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2,sans-serif,serif\'; font-size:10pt;\">Convierte a cualquiera de las anteriores de manera aleatoria</span> </p></td></tr></table>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.grammarCloseBtn_2.setText(_translate("grammar", "Cerrar"))
+
 
 if __name__ == "__main__":
     import sys

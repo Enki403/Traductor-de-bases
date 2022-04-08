@@ -1,9 +1,11 @@
 403hex
 403oct
 403rom
-
-403ranranran
 403alt
 403ran
 
-403ran
+1000rom
+580oct
+902854543alt
+155000alt
+1altaltran

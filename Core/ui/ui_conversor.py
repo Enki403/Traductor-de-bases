@@ -56,7 +56,7 @@ class Ui_Conversor(object):
         self.lexLayout.addWidget(self.lexLabel)
         self.lexTable = QtWidgets.QTableView(self.horizontalLayoutWidget)
         self.lexTable.setEnabled(True)
-        self.lexTable.setMinimumSize(QtCore.QSize(555, 0))
+        self.lexTable.setMinimumSize(QtCore.QSize(500, 0))
         self.lexTable.setObjectName("lexTable")
         self.lexLayout.addWidget(self.lexTable)
         self.baseLayout.addLayout(self.lexLayout)
@@ -136,6 +136,7 @@ class Ui_Conversor(object):
         self.actionNuevo.setShortcut(_translate("Conversor", "Ctrl+N"))
         self.actionCerrar.setText(_translate("Conversor", "Cerrar"))
         self.actionCerrar.setShortcut(_translate("Conversor", "Ctrl+F4"))
+
 
 if __name__ == "__main__":
     import sys
