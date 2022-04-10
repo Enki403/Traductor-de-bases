@@ -21,7 +21,7 @@ class Ui_Conversor(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Conversor.sizePolicy().hasHeightForWidth())
         Conversor.setSizePolicy(sizePolicy)
-        Conversor.setMinimumSize(QtCore.QSize(1273, 502))
+        Conversor.setMinimumSize(QtCore.QSize(1300, 502))
         Conversor.setMaximumSize(QtCore.QSize(1300, 502))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icon/icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)

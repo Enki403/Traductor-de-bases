@@ -17,7 +17,7 @@ class Logic(object):
         self.ui = Ui_Conversor()
         self.ui.setupUi(self.Conversor)
         self.ui.lexTable.resizeColumnsToContents()
-        self.ui.lexTable.setColumnWidth(3,225)
+        self.ui.lexTable.setColumnWidth(3,250)
         self.ui.lexTable.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
         self.ui.sinTable.resizeColumnsToContents()
         self.ui.sinTable.setColumnWidth(0,100)
@@ -31,6 +31,8 @@ class Logic(object):
         self.about = QtWidgets.QWidget()
         self.about_ui = Ui_AcercaDe()
         self.about_ui.setupUi(self.about)
+
+        self.analizador_sin = SinAnalizer()
 
         self.connections()
 
@@ -75,10 +77,11 @@ class Logic(object):
         self.load_lex_table([["","","",""]])
         self.load_sin_table([["",""]])
         self.ui.lexTable.resizeColumnsToContents()
-        self.ui.lexTable.setColumnWidth(3,225)
+        self.ui.lexTable.setColumnWidth(3,250)
         self.ui.sinTable.resizeColumnsToContents()
         self.ui.sinTable.setColumnWidth(0,100)
         self.ui.sinTable.setColumnWidth(1,165)
+        self.analizador_sin.arbol = []
 
     def import_file(self):
         """
@@ -111,7 +114,7 @@ class Logic(object):
         """
         self.ui.lexTable.setModel(TableModel(data, ["Línea", "Token", "Lexema", "Descripción"]))
         self.ui.lexTable.resizeColumnsToContents()
-        self.ui.lexTable.setColumnWidth(3,225)
+        self.ui.lexTable.setColumnWidth(3,250)
         
     
     def load_sin_table(self, data):
@@ -128,9 +131,11 @@ class Logic(object):
         """
             Se encarga de analizar y traducir la entrada
         """
+        self.analizador_sin.arbol = []
         data_array = Auxiliar().plain_2_array(self.ui.inputBox.toPlainText())
         lex_data = LexAnalizer(data_array).tokenizar()
-        sin_data = SinAnalizer(data_array).analizar()
+        self.analizador_sin.setText(data_array)
+        sin_data = self.analizador_sin.analizar()
         
         self.load_lex_table(lex_data)
 
@@ -142,4 +147,4 @@ class Logic(object):
             Se encarga de mostrar el arbol sintáctico
             ToDo: Ver como generar el arbol y que libreria utilizar
         """
-        print("Mostrar arbol")
+        print(self.analizador_sin.get_formated_tree())

@@ -17,7 +17,7 @@ class Auxiliar():
         """
             Toma como entrada una cadena de texto y retorna un arreglo con las palabras separadas
         """
-        return [ element.strip()  for element in plain.split('\n')]
+        return [ element.strip().lower()  for element in plain.split('\n')]
 
     def open_file_dialog(self, parent, msg):
         """
