@@ -115,4 +115,4 @@ Se provee el script [main.py](main.py), el cual implementa la interfaz gráfica.
 
 ## License
 
-[MIT](https://mit-license.org/)
+[MIT](LICENSE)
