@@ -2,10 +2,6 @@
 
 import re
 import random
-from tkinter import E
-
-from numpy import isin
-
 from Core.auxiliar import Auxiliar
 
 class SinAnalizer():

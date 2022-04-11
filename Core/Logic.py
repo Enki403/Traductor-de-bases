@@ -172,5 +172,4 @@ class Logic(object):
             Se encarga de mostrar el arbol sintáctico
             ToDo: Ver como guardar el arbol
         """
-        # print(self.analizador_sin.get_formated_tree())
         self.treeWindow()
