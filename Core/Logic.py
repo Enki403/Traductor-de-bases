@@ -119,7 +119,7 @@ class Logic(object):
         """
             Ejecuta el codigo de JavaScript para descargar el arbol
         """
-        js_script = """const base64doc=btoa(unescape(encodeURIComponent(document.querySelector("svg").outerHTML))),a=document.createElement("a"),e=new MouseEvent("click");a.download="download.svg",a.href="data:text/html;base64,"+base64doc,a.dispatchEvent(e);"""
+        js_script = """const base64doc=btoa(unescape(encodeURIComponent(document.querySelector("svg").outerHTML))),a=document.createElement("a"),e=new MouseEvent("click");a.download="arbol_generado.svg",a.href="data:text/html;base64,"+base64doc,a.dispatchEvent(e);"""
         self.tree_ui.tree.page().runJavaScript(js_script)
 
         self.tree_ui.tree.page().profile().downloadRequested.connect(self.tree_ui.download_requested)
