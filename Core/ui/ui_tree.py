@@ -9,10 +9,11 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5 import QtWebEngineWidgets
+
 
 class Ui_Arbol(object):
     def setupUi(self, Arbol):
+        self.n = 0
         Arbol.setObjectName("Arbol")
         Arbol.resize(800, 600)
         Arbol.setMinimumSize(QtCore.QSize(800, 600))
@@ -30,10 +31,16 @@ class Ui_Arbol(object):
         self.tree.setMinimumSize(QtCore.QSize(750, 500))
         self.tree.setObjectName("tree")
         self.verticalLayout.addWidget(self.tree)
-        self.pushBtn = QtWidgets.QPushButton(Arbol)
-        self.pushBtn.setStyleSheet("")
-        self.pushBtn.setObjectName("pushBtn")
-        self.verticalLayout.addWidget(self.pushBtn)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.svgBtn = QtWidgets.QPushButton(Arbol)
+        self.svgBtn.setStyleSheet("")
+        self.svgBtn.setObjectName("svgBtn")
+        self.horizontalLayout.addWidget(self.svgBtn)
+        self.pngBtn = QtWidgets.QPushButton(Arbol)
+        self.pngBtn.setObjectName("pngBtn")
+        self.horizontalLayout.addWidget(self.pngBtn)
+        self.verticalLayout.addLayout(self.horizontalLayout)
 
         self.retranslateUi(Arbol)
         QtCore.QMetaObject.connectSlotsByName(Arbol)
@@ -41,23 +48,33 @@ class Ui_Arbol(object):
     def retranslateUi(self, Arbol):
         _translate = QtCore.QCoreApplication.translate
         Arbol.setWindowTitle(_translate("Arbol", "Árbol Generado"))
-        self.pushBtn.setText(_translate("Arbol", "Exportar SVG"))
+        self.svgBtn.setText(_translate("Arbol", "Exportar como SVG..."))
+        self.pngBtn.setText(_translate("Arbol", "Exportar como PNG..."))
 
     def download_requested(self, download):
         """
             Maneja las solicitudes de descarga
         """
-        path, _ = QtWidgets.QFileDialog.getSaveFileName(
-            self.tree, "Exportar arbol a ...", "arbol", "*." + "svg"
-        )
-        if path:
-            download.setPath(path)
-            download.accept()
-            download.finished.connect(self.download_finished)
+        if self.n == 0:
+            self.n +=1
+            suffix = ""
+            if download.url().toString().split(";")[0].split("/")[1] == "html":
+                suffix = "svg"
+            elif download.url().toString().split(";")[0].split("/")[1] == "png":
+                suffix = "png"
+            path, _ = QtWidgets.QFileDialog.getSaveFileName(
+                self.tree, "Exportar arbol a ...", "arbol", "*." + suffix
+            )
+            if path:
+                download.setPath(path)
+                download.accept()
+                download.finished.connect(self.download_finished)
 
     @staticmethod
     def download_finished():
-        print("finished")
+        print("Archivo Descargado con exito")    
+
+from PyQt5 import QtWebEngineWidgets
 
 
 if __name__ == "__main__":
