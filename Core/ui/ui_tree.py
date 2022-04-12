@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from PyQt5 import QtWebEngineWidgets
 
 class Ui_Arbol(object):
     def setupUi(self, Arbol):
@@ -30,8 +30,10 @@ class Ui_Arbol(object):
         self.tree.setMinimumSize(QtCore.QSize(750, 500))
         self.tree.setObjectName("tree")
         self.verticalLayout.addWidget(self.tree)
-        self.actionGuardar = QtWidgets.QAction(Arbol)
-        self.actionGuardar.setObjectName("actionGuardar")
+        self.pushBtn = QtWidgets.QPushButton(Arbol)
+        self.pushBtn.setStyleSheet("")
+        self.pushBtn.setObjectName("pushBtn")
+        self.verticalLayout.addWidget(self.pushBtn)
 
         self.retranslateUi(Arbol)
         QtCore.QMetaObject.connectSlotsByName(Arbol)
@@ -39,8 +41,23 @@ class Ui_Arbol(object):
     def retranslateUi(self, Arbol):
         _translate = QtCore.QCoreApplication.translate
         Arbol.setWindowTitle(_translate("Arbol", "Árbol Generado"))
-        self.actionGuardar.setText(_translate("Arbol", "Guardar"))
-from PyQt5 import QtWebEngineWidgets
+        self.pushBtn.setText(_translate("Arbol", "Exportar SVG"))
+
+    def download_requested(self, download):
+        """
+            Maneja las solicitudes de descarga
+        """
+        path, _ = QtWidgets.QFileDialog.getSaveFileName(
+            self.tree, "Exportar arbol a ...", "arbol", "*." + "svg"
+        )
+        if path:
+            download.setPath(path)
+            download.accept()
+            download.finished.connect(self.download_finished)
+
+    @staticmethod
+    def download_finished():
+        print("finished")
 
 
 if __name__ == "__main__":

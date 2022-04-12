@@ -40,12 +40,17 @@
      </property>
     </widget>
    </item>
+   <item>
+    <widget class="QPushButton" name="pushBtn">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Exportar SVG</string>
+     </property>
+    </widget>
+   </item>
   </layout>
-  <action name="actionGuardar">
-   <property name="text">
-    <string>Guardar</string>
-   </property>
-  </action>
  </widget>
  <customwidgets>
   <customwidget>
