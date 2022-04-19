@@ -11,7 +11,7 @@ class LexAnalizer():
         self._text = text
         self.data = []
         
-        # ? Patrones
+        """ # ? Patrones
         # entero
         self.int_ptrn = r'(\d+)'
         # hex
@@ -24,6 +24,22 @@ class LexAnalizer():
         self.alt_ptrn = r'(?<=(?:\d)|(?:x)|(?:t)|(?:m)|(?:n))(alt+)(?=(?:hex)|(?:oct)|(?:rom)|(?:alt)|(?:ran)|(?:\Z)|(?:\s))'
         # ran
         self.ran_ptrn = r'(?<=(?:\d)|(?:x)|(?:t)|(?:m)|(?:n))(ran+)(?=(?:hex)|(?:oct)|(?:rom)|(?:alt)|(?:ran)|(?:\Z)|(?:\s))'
+        # cadena vacia
+        self.vacia_ptrn = r'^$' """
+        
+        # ? Patrones
+        # entero
+        self.int_ptrn = r'(\d+)'
+        # hex
+        self.hex_ptrn = r'(hex)'
+        # oct
+        self.oct_ptrn = r'(oct)'
+        # rom
+        self.rom_ptrn = r'(rom)'
+        # alt
+        self.alt_ptrn = r'(alt)'
+        # ran
+        self.ran_ptrn = r'(ran)'
         # cadena vacia
         self.vacia_ptrn = r'^$'
 
