@@ -152,8 +152,7 @@ class Logic(object):
         
         # Solo permite una descarga a la vez
         self.tree_ui.n = 0
-
-        
+      
     def aboutWindow(self): 
         """
             Muestra la ventana de los integrantes del grupo
@@ -172,7 +171,6 @@ class Logic(object):
         self.ui.lexTable.resizeColumnsToContents()
         self.ui.lexTable.setColumnWidth(3,250)
         
-    
     def load_sin_table(self, data):
         """
             Carga la tabla de tokens del analizador sintáctico
@@ -182,7 +180,6 @@ class Logic(object):
         self.ui.sinTable.setColumnWidth(0,100)
         self.ui.sinTable.setColumnWidth(1,165)
         self.ui.sinTable.resizeColumnsToContents()
-
 
     def traducir(self):
         """

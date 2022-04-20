@@ -61,10 +61,8 @@ class SinAnalizer():
                 data.append([item, self.spc_translate()])
             else:
                 data.append([item, self.err_translate()])
-                #break
 
         return data
-
 
     def hex_translate(self, value):
         """
@@ -102,16 +100,6 @@ class SinAnalizer():
         MAX_NUMERO = 999999999999
         Aux = Auxiliar()
 
-        if numero_entero > MAX_NUMERO:
-            return 'Número demasiado alto'
-        if numero_entero < 0:
-            return 'menos {}'.format(self.alt_translate(abs(value)))
-        letras_decimal = ''
-        parte_decimal = int(round((abs(value) - abs(numero_entero)) * 100))
-        if parte_decimal > 9:
-            letras_decimal = 'punto {}'.format(self.alt_translate(parte_decimal))
-        elif parte_decimal > 0:
-            letras_decimal = 'punto cero {}'.format(self.alt_translate(parte_decimal))
         if (numero_entero <= 99):
             resultado = Aux.leer_decenas(numero_entero)
         elif (numero_entero <= 999):
@@ -127,9 +115,6 @@ class SinAnalizer():
         resultado = resultado.strip()
         resultado = resultado.replace(' _ ', ' ')
         resultado = resultado.replace('  ', ' ')
-        
-        if parte_decimal > 0:
-            resultado = '{} {}'.format(resultado, letras_decimal)
         
         return resultado
 
@@ -186,9 +171,6 @@ class SinAnalizer():
                 
             except Exception as e:
                 print(e)
-        
-        
-        pila = list([0])
 
     def _lr1(self, tokens):
         """
@@ -461,4 +443,3 @@ class SinAnalizer():
                 return res
             else:
                 return [{'name':child[1]} for child in arreglo]
-

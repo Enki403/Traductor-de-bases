@@ -10,7 +10,7 @@ class LexAnalizer():
         
         self._text = text
         self.data = []
-        
+
         """ # ? Patrones
         # entero
         self.int_ptrn = r'(\d+)'
@@ -45,7 +45,7 @@ class LexAnalizer():
 
     def tokenizar(self):
         """
-            Crea la tabla de tokens
+            Crea la tabla de tokens y retorna un arreglo conteniendo la informacion de tokens por linea
         """
         
         for idx, item in enumerate(self._text):
